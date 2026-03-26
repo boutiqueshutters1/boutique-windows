@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Windows | Boutique Windows and Doors</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='2' width='28' height='28' rx='4' fill='%230a2463'/><rect x='6' y='6' width='20' height='20' rx='2' fill='none' stroke='%234d8bff' stroke-width='2'/><line x1='16' y1='6' x2='16' y2='26' stroke='%234d8bff' stroke-width='2'/><line x1='6' y1='16' x2='26' y2='16' stroke='%234d8bff' stroke-width='2'/></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9674;</span>
+        <span class="logo-text">BOUTIQUE<span class="logo-accent">WINDOWS & DOORS</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="index.html#windows">Windows <svg class="dropdown-arrow" viewBox="0 0 12 8" width="10" height="6"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="casement-windows.html">Casement Windows</a>
+            <a href="tilt-turn-windows.html">Tilt &amp; Turn Windows</a>
+            <a href="awning-windows.html">Awning Windows</a>
+            <a href="sliding-windows.html">Sliding Windows</a>
+            <a href="double-hung-windows.html">Double Hung Windows</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="index.html#doors">Doors <svg class="dropdown-arrow" viewBox="0 0 12 8" width="10" height="6"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="sliding-doors.html">Sliding Doors</a>
+            <a href="bifold-doors.html">Bi-fold Doors</a>
+            <a href="casement-doors.html">Casement Doors</a>
+            <a href="pivot-doors.html">Pivot Doors</a>
+            <a href="glass-walls.html">Glass Walls</a>
+          </div>
+        </li>
+        <li><a href="index.html#why-us">Why Us</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Product Hero -->
+  <section class="product-hero">
+    <img src="images/sliding-window.jpg" alt="Sliding Windows" class="product-hero-img">
+    <div class="container product-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <a href="index.html#windows">Windows</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Sliding Windows</span>
+      </div>
+      <h1>Sliding Windows</h1>
+      <p class="hero-desc">Smooth-gliding horizontal windows ideal for wide openings. Space-saving design perfect for kitchens, living rooms, and bedrooms.</p>
+    </div>
+  </section>
+
+  <!-- 82T Series -->
+  <section class="series-section">
+    <div class="container">
+      <div class="series-card">
+        <div class="series-image">
+          <img src="images/sliding-window.jpg" alt="82T Series Sliding Window" loading="lazy">
+          <span class="series-badge">82T Series</span>
+        </div>
+        <div class="series-info">
+          <h2>82T Series</h2>
+          <p class="series-subtitle">Sliding Window</p>
+          <p class="series-desc">The 82T Series Sliding Window features a 78.6mm profile depth with smooth dual-track gliding system. Perfect for wide openings where swing-out windows aren't practical. Available in multiple panel configurations including 2-panel, 3-panel, and 4-panel options with optional mesh screens.</p>
+
+          <!-- Specs Table -->
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Profile Thickness</td>
+                <td>1.4mm</td>
+              </tr>
+              <tr>
+                <td>Profile Depth</td>
+                <td>78.6mm</td>
+              </tr>
+              <tr>
+                <td>Standard Glass</td>
+                <td>5mm Low-E + 9Argon + 5mm Tempered Clear Glass</td>
+              </tr>
+              <tr>
+                <td>Standard Hardware</td>
+                <td>GU</td>
+              </tr>
+              <tr>
+                <td>Optional Hardware</td>
+                <td>HK Kinlong</td>
+              </tr>
+              <tr>
+                <td>Min Size</td>
+                <td>1000&times;550mm / 39.37&times;21.65 inch</td>
+              </tr>
+              <tr>
+                <td>Max Size</td>
+                <td>3000&times;2350mm / 118.11&times;92.52 inch</td>
+              </tr>
+              <tr>
+                <td>Flyscreen</td>
+                <td>0.3 &amp; 0.5 &amp; 0.8mm S.S</td>
+              </tr>
+              <tr>
+                <td>Installation</td>
+                <td>Nail Fin / Bracket / Screw</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Profile Dimensions -->
+          <div class="profile-dims">
+            <div class="profile-dim">
+              <div class="dim-label">Depth</div>
+              <div class="dim-value">78.6mm</div>
+            </div>
+            <div class="profile-dim">
+              <div class="dim-label">Visible Width</div>
+              <div class="dim-value">113mm</div>
+            </div>
+            <div class="profile-dim">
+              <div class="dim-label">Frame Width</div>
+              <div class="dim-value">36mm</div>
+            </div>
+            <div class="profile-dim">
+              <div class="dim-label">Sash Width</div>
+              <div class="dim-value">72mm</div>
+            </div>
+            <div class="profile-dim">
+              <div class="dim-label">Frame Width</div>
+              <div class="dim-value">49mm</div>
+            </div>
+            <div class="profile-dim">
+              <div class="dim-label">Sash Width</div>
+              <div class="dim-value">72mm</div>
+            </div>
+            <div class="profile-dim">
+              <div class="dim-label">Sash Width</div>
+              <div class="dim-value">33mm</div>
+            </div>
+          </div>
+
+          <!-- Features -->
+          <div class="series-features">
+            <div class="series-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Smooth dual-track gliding</span>
+            </div>
+            <div class="series-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Space-saving horizontal design</span>
+            </div>
+            <div class="series-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Multiple panel configurations</span>
+            </div>
+            <div class="series-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>GU/HK Kinlong hardware</span>
+            </div>
+          </div>
+
+          <a href="index.html#contact" class="btn btn-sm">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="product-cta">
+    <div class="container">
+      <h2>Ready to Upgrade Your Windows?</h2>
+      <p>Contact us today for a free consultation and custom quote on our premium sliding windows.</p>
+      <a href="index.html#contact" class="btn btn-primary">Request Free Estimate</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">&#9674;</span>
+            <span class="logo-text">BOUTIQUE<span class="logo-accent">WINDOWS & DOORS</span></span>
+          </a>
+          <p>Premium aluminum windows and doors for residential and commercial projects. Custom-crafted for beauty, efficiency, and durability.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Windows</h4>
+          <ul>
+            <li><a href="casement-windows.html">Casement Windows</a></li>
+            <li><a href="tilt-turn-windows.html">Tilt &amp; Turn Windows</a></li>
+            <li><a href="awning-windows.html">Awning Windows</a></li>
+            <li><a href="sliding-windows.html">Sliding Windows</a></li>
+            <li><a href="double-hung-windows.html">Double Hung Windows</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Doors</h4>
+          <ul>
+            <li><a href="sliding-doors.html">Sliding Doors</a></li>
+            <li><a href="bifold-doors.html">Bi-fold Doors</a></li>
+            <li><a href="casement-doors.html">Casement Doors</a></li>
+            <li><a href="pivot-doors.html">Pivot Doors</a></li>
+            <li><a href="glass-walls.html">Glass Walls</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html#why-us">Why Choose Us</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+            <li><a href="index.html#contact">Request Quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Boutique Windows and Doors. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>

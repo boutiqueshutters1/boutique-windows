@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "boutique-windows",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/dannyhuynh/Downloads/boutique-windows", "-l", "3456"],
+      "port": 3456
+    }
+  ]
+}
